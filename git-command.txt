@@ -1,0 +1,90 @@
+ls -a // For listing all files or folders including hidden
+
+git init      // Initilize the project
+
+git add .     // add all files and folders
+
+git commit -m "first commit"
+
+git remote add origin "" //Add repositery link
+
+git remote -v (to verify remote)
+
+git branch (to check branch)
+
+git branch -M main (To Rename Branch)
+
+git push -u origin main
+
+git status // for check tracking status
+
+--------// Copy or clone git repo into local machine -//
+ 
+git clone projectUrl
+
+-------------// set url--------------------
+
+git remote set-url origin "new.git.url"
+
+-------------// Show url--------------------
+
+git remote show origin 
+
+--------------// create new branch------------------
+git branch <new_branch_name> 
+
+---------------//switch to those branch--------------------
+git checkout <new_branch_name> 
+
+----------------//Create New Git Branch From Current Branch-------------
+git checkout -b <new_branch_name> 
+
+------------Create New Git Branch From a Different Branch-------------------
+git checkout -b <new_branch_name> <specific_different_branch> 
+
+
+git diff branchName
+git merge BranchA //merge branchA code into current branch
+
+--------------------// delete branch locally-------------------
+git branch -d <-branch name->
+
+----------------// delete branch remotely---------------------------------
+git push origin --delete remoteBranchName
+
+
+-------------------//remove git from current proejct-------------------------
+
+rm -rf .git
+
+
+
+Pull from main branch to develop branch
+
+git pull origin main
+git push -u origin 
+
+
+
+--------------------Undoing Changes------------------
+
+git log - For check all commits
+
+Case-1: staged changes
+
+git reset <-file name->
+git reset
+
+case-2: reset commited 
+	git reset HEAD~1
+
+case 3: Undo particular commit
+
+git reset <-commit hash-> // Reset particular commit
+git reset --hard <-commit hash-> //Reset commit as well as remove code from editor
+
+
+
+
+
+
