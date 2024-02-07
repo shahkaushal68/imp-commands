@@ -1,0 +1,38 @@
+------------Images related command----------
+
+docker images || docker image ls -//dispaly All IImages
+docker image build -t image_name:v2 .  -// Build or create a new image
+docker image rm image_name  -// Delete image
+
+
+------------Containers Related command----------
+
+docker container ls -a -//display all containers
+
+docker container start container_id -//start the particular container
+docker container stop container_id -//Stop the container
+
+// Create & run container with image using docker
+
+docker container -d run --name container_name image_name
+docker container run --name container_name -p 3000:3000 -d image_name
+docker run -d --rm -v myvolume:/app --name container_name -p 0:5500 image_name
+
+//Delete Container
+docker container rm container_name
+
+
+// Delete All images and containers 
+docker system prune -a
+
+-----------Composer related Command-----------
+
+docker-compose ps  //Listout all Containers
+docker compose up -//For compose docker files
+docker compose down -//For Remove the container
+docker compose build 
+
+
+
+
+
